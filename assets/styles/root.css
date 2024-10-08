@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --main: #dd5b5b;
+  --accent_blue: #50618a;
+  --accent_yellow: #efb157;
+  --text_main: #333;
+  --line: #d1d1d1;
+  --bg_white: #fff;
+  --bg_pink: #fef1f1;
+  --bg_blue: #f5f9ff;
+  --bg_gray: #fafafa;
+}
