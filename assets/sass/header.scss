@@ -91,6 +91,45 @@
         font-weight: 700;
       }
     }
+    .burger_menu {
+      display: none;
+      width: 3.2rem;
+      height: 3.2rem;
+      margin-left: auto;
+      position: relative;
+      padding: 0.5rem;
+      margin: 1.2rem 0;
+      cursor: pointer;
+      .line {
+        width: 100%;
+        height: 0.25rem;
+        background-color: #757575;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+      }
+      .line:nth-child(1) {
+        top: 25%;
+      }
+      .line:nth-child(3) {
+        top: 75%;
+      }
+    }
+    .burger_menu.active {
+      .line:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      .line:nth-child(2) {
+        opacity: 0;
+      }
+      .line:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
   }
   .bottom_header {
     width: 100%;
@@ -119,10 +158,61 @@
       }
     }
   }
-  .burger_menu {
-    display: none;
+  .off_screen-menu {
+    width: 100%;
+    max-width: 42.5rem;
+    height: 100vh;
   }
-  .burger_menu.active {
-    display: block;
+}
+
+@media (max-width: 1024px) {
+  .header_section {
+    .top_header {
+      .top_left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        a {
+          img {
+            width: 11.4rem;
+          }
+        }
+        .divider {
+          display: none;
+        }
+        .last_a {
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+      }
+      .top_right {
+        .btn {
+          width: 12rem;
+          padding: 0.6rem 1.2rem;
+          img {
+            width: 1.3rem;
+          }
+        }
+        .btn.header_btn-red {
+          font-size: 1.2rem;
+        }
+        .btn.header_btn-white {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .bottom_header {
+      width: 100%;
+      background-color: var(--bg_pink, #fef1f1);
+      .bottom_container {
+        a {
+          padding: 0.7rem 1.2rem;
+          font-size: 1.2rem;
+          img {
+            width: 2rem;
+          }
+        }
+      }
+    }
   }
 }

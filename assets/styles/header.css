@@ -87,6 +87,43 @@
   font-size: 1.4rem;
   font-weight: 700;
 }
+.header_section .top_header .burger_menu {
+  display: none;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: auto;
+  position: relative;
+  padding: 0.5rem;
+  margin: 1.2rem 0;
+  cursor: pointer;
+}
+.header_section .top_header .burger_menu .line {
+  width: 100%;
+  height: 0.25rem;
+  background-color: #757575;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.header_section .top_header .burger_menu .line:nth-child(1) {
+  top: 25%;
+}
+.header_section .top_header .burger_menu .line:nth-child(3) {
+  top: 75%;
+}
+.header_section .top_header .burger_menu.active .line:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.header_section .top_header .burger_menu.active .line:nth-child(2) {
+  opacity: 0;
+}
+.header_section .top_header .burger_menu.active .line:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 .header_section .bottom_header {
   width: 100%;
   background-color: var(--bg_pink, #fef1f1);
@@ -114,11 +151,52 @@
 .header_section .bottom_header .bottom_container a img {
   width: 2.4rem;
 }
-.header_section .burger_menu {
-  display: none;
+.header_section .off_screen-menu {
+  width: 100%;
+  max-width: 42.5rem;
+  height: 100vh;
 }
-.header_section .burger_menu.active {
-  display: block;
+
+@media (max-width: 1024px) {
+  .header_section .top_header .top_left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .header_section .top_header .top_left a img {
+    width: 11.4rem;
+  }
+  .header_section .top_header .top_left .divider {
+    display: none;
+  }
+  .header_section .top_header .top_left .last_a {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .header_section .top_header .top_right .btn {
+    width: 12rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .header_section .top_header .top_right .btn img {
+    width: 1.3rem;
+  }
+  .header_section .top_header .top_right .btn.header_btn-red {
+    font-size: 1.2rem;
+  }
+  .header_section .top_header .top_right .btn.header_btn-white {
+    font-size: 1.2rem;
+  }
+  .header_section .bottom_header {
+    width: 100%;
+    background-color: var(--bg_pink, #fef1f1);
+  }
+  .header_section .bottom_header .bottom_container a {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.2rem;
+  }
+  .header_section .bottom_header .bottom_container a img {
+    width: 2rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
