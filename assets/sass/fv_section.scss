@@ -1,0 +1,50 @@
+.fv_section {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin-top: 20rem;
+  swiper-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    swiper-slide {
+      transition: transform 0.3s ease, width 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: lightcoral;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .swiper-slide-active {
+      width: 80%; // Width of the active/main card
+      transform: scale(1);
+      background-color: lightblue;
+    }
+
+    .swiper-slide-prev {
+      opacity: 0.7;
+      transform: scale(0.9); // Slightly shrink side cards
+    }
+    .swiper-slide-next {
+      opacity: 0.7;
+      transform: scale(0.9); // Slightly shrink side cards
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #000; // Customize bullet color
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000; // Customize arrow color
+    }
+  }
+}

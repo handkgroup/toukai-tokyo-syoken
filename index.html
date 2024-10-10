@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/styles/root.css" />
     <link rel="stylesheet" href="./assets/styles/header.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/fv_section.css" />
   </head>
   <body>
     <!-- Header starts here -->
@@ -116,6 +117,35 @@
 
     <!-- ===================================================== -->
 
+    <!-- fv_section starts here -->
+    <div class="fv_section">
+      <swiper-container
+        class="mySwiper"
+        loop="true"
+        space-between="30"
+        slides-per-view="auto"
+        centered-slides="true"
+        autoplay-delay="3000"
+        autoplay-disable-on-interaction="false"
+        navigation="true"
+        pagination="true"
+        pagination-clickable="true">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+      </swiper-container>
+    </div>
+
+    <!-- fv_section ends here -->
+
+    <!-- ===================================================== -->
+
     <!-- Footer starts here -->
     <div class="footer_section">
       <a href="#" class="to_top"
@@ -180,5 +210,27 @@
     </div>
     <!-- Footer ends here -->
     <script src="./js/header.js"></script>
+    <script src="./js/fv.js"></script>
+    <!-- swiper js use in hubspot -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- swiper js ends -->
+    <!-- <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script> -->
   </body>
 </html>
