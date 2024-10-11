@@ -1,0 +1,81 @@
+.attention {
+  width: 100%;
+  padding: 0 1.4rem;
+  .attention_card {
+    display: flex;
+    width: 100%;
+    max-width: 104rem;
+    margin: 0 auto;
+    padding: 5rem 6.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    border-radius: 4rem;
+    background: var(--bg_gray, #fafafa);
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      img {
+        width: 4rem;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      span {
+        display: inline-block;
+        a {
+          color: var(--accent, #50618a);
+          text-align: right;
+          font-size: 1.2rem;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+          img {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .attention {
+    .attention_card {
+      padding: 5rem 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .attention {
+    .attention_card {
+      padding: 5rem 1.6rem;
+      h2 {
+        font-size: 1.4rem;
+        img {
+          width: 2.5rem;
+        }
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4rem;
+        span {
+          a {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
