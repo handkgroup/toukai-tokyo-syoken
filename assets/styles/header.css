@@ -5,6 +5,7 @@
   width: 100%;
   overflow: hidden;
   z-index: 100;
+  background-color: #fff;
 }
 .header_section .top_header {
   width: 100%;

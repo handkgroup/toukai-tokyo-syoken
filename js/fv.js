@@ -1,8 +1,8 @@
 const swiper = new Swiper(".mySwiper", {
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 30, // space between slides
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: "auto", // allows partial slides to be seen
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
