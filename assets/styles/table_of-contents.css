@@ -1,0 +1,91 @@
+.table_of-contents {
+  width: 100%;
+  height: 50rem;
+  padding: 0 1.4rem;
+  margin-bottom: 4rem;
+}
+.table_of-contents .card {
+  max-width: 80rem;
+  width: 100%;
+  height: 50rem;
+  margin: 0 auto;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+  overflow: hidden;
+  position: relative;
+}
+.table_of-contents .card .card_top {
+  display: flex;
+  padding: 0.8rem 3.2rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 1rem 1rem 0 0;
+  background: #f67a7a;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+.table_of-contents .card .card_top .left_side {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--white, #fff);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.table_of-contents .card .card_top .left_side img {
+  width: 2.4rem;
+}
+.table_of-contents .card .card_top .right_side {
+  display: flex;
+  padding: 0.5rem 0.8rem;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--white, #fff);
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.table_of-contents .card .card_top .card_bottom {
+  width: 100%;
+  display: flex;
+  padding: 1.4rem 3.2rem 2.4rem 3.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+  align-self: stretch;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transform: translate(0, 100%);
+  border: 0.1rem solid var(--line, #d1d1d1);
+  background: var(--background_gray, #fafafa);
+  border-radius: 0 0 2rem 2rem;
+}
+.table_of-contents .card .card_top .card_bottom li {
+  color: var(--text_main, #333);
+  font-size: 14px;
+  font-weight: 700;
+}
+.table_of-contents .card .card_top .card_bottom li ul {
+  display: flex;
+  padding-left: 1.6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.table_of-contents .card .card_top .card_bottom li ul li {
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=table_of-contents.css.map */
