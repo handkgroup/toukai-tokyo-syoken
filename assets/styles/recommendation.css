@@ -1,0 +1,52 @@
+.recommendation {
+  width: 100%;
+  padding: 0 1.4rem;
+}
+.recommendation form {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.recommendation form fieldset {
+  display: flex;
+  width: 100%;
+  padding: 3.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--gray, #b6b6b6);
+}
+.recommendation form fieldset legend {
+  color: var(--accent, #50618a);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.recommendation form fieldset ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.recommendation form fieldset ul li {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 1.6rem;
+  flex: 1 0 0;
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.recommendation form fieldset ul li img {
+  width: 1rem;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 425px) {
+  .recommendation form fieldset {
+    padding: 24px 16px;
+  }
+}
