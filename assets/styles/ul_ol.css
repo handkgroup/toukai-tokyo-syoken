@@ -1,0 +1,31 @@
+ol {
+  list-style-type: none; /* Removes default numbering */
+  counter-reset: list-counter;
+}
+
+ol li {
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+  padding-left: calc(
+    2rem + 0.8rem
+  ); /* Adjusting padding to account for the number and the gap */
+}
+
+ol li::before {
+  counter-increment: list-counter;
+  content: counter(list-counter) "";
+  position: absolute;
+  left: 0;
+  color: #fff;
+  background-color: orange;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-right: 8px; /* Adds the 8px gap between the number and the content */
+}
