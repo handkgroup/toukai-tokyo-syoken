@@ -18,3 +18,10 @@
   left: 0;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .big_image .image_container {
+    max-width: 35.8rem;
+    height: 20.6rem;
+  }
+}

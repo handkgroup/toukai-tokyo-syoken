@@ -1,0 +1,34 @@
+.red_border-text {
+  width: 100%;
+}
+.red_border-text .red_border {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 1.6rem 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--main, #dd5b5b);
+}
+.red_border-text .red_border p {
+  align-self: stretch;
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.red_border-text .red_border p span {
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.red_border-text .red_border p span a {
+  color: var(--main, #dd5b5b);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+}

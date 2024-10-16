@@ -25,3 +25,21 @@
   left: 0;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .small_image .container {
+    width: 100%;
+    max-width: 35.8rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .small_image .container .small_image_container {
+    width: 11rem;
+    height: 6.2rem;
+    border-radius: 1rem;
+  }
+  .small_image .container {
+    gap: 1.6rem;
+  }
+}
