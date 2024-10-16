@@ -1,34 +1,8 @@
-// const swiper = new Swiper(".mySwiper", {
-//   loop: true,
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   autoplay: {
-//     delay: 3000,
-//     disableOnInteraction: false,
-//   },
-//   on: {
-//     init: function () {
-//       updateSlideClasses(this);
-//     },
-//     slideChange: function () {
-//       updateSlideClasses(this);
-//     },
-//   },
-//   cssMode: true,
-// });
-
-// Initialize Swiper
 const swiper = new Swiper(".swiper-container", {
   loop: true,
+  spaceBetween: 0,
+  centeredSlides: true,
+  slidesPerView: "auto",
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,

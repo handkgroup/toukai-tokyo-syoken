@@ -9,6 +9,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet" />
+
     <link rel="stylesheet" href="./assets/styles/root.css" />
     <link rel="stylesheet" href="./assets/styles/header.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
@@ -20,11 +21,19 @@
     <link rel="stylesheet" href="./assets/styles/attention.css" />
     <link rel="stylesheet" href="./assets/styles/recommendation.css" />
     <link rel="stylesheet" href="./assets/styles/table_of-contents.css" />
-    <link rel="stylesheet" href="./assets/styles/h2.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles/h2.css" /> -->
     <link rel="stylesheet" href="./assets/styles/cta.css" />
     <link rel="stylesheet" href="./assets/styles/key_points.css" />
-    <link rel="stylesheet" href="./assets/styles/ul_ol.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles/ul_ol.css" /> -->
     <link rel="stylesheet" href="./assets/styles/swiper_test.css" />
+    <link rel="stylesheet" href="./assets/styles/comment_gray.css" />
+    <link rel="stylesheet" href="./assets/styles/comment_white.css" />
+    <link rel="stylesheet" href="./assets/styles/reference.css" />
+    <link rel="stylesheet" href="./assets/styles/big_image.css" />
+    <link rel="stylesheet" href="./assets/styles/small_image.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- Header starts here -->
@@ -190,12 +199,6 @@
       <div class="swiper-pagination"></div>
       <!-- </section> -->
     </div>
-
-    <!-- Swiper JS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- <div class="fv_section">
       <swiper-container
@@ -471,12 +474,11 @@
     <!-- ========================================================= -->
 
     <!-- H2 starts here -->
-    <h2 class="h2_section"><span></span>H2の見出しです</h2>
+    <h2 class="h2_section">H2の見出しです</h2>
     <h3>H3見出しですH3見出しです</h3>
-    <h4>
-      <span></span>見出し 4hテキスト見出し 4hテキスト見出し 4hテキスト見出し
-      4hテキスト見出し 4hテキスト見出し 4hテキスト見出し 4hテキスト見出し
-      4hテキスト
+    <h4 class="h4_section">
+      見出し 4hテキスト見出し 4hテキスト見出し 4hテキスト見出し 4hテキスト見出し
+      4hテキスト見出し 4hテキスト見出し 4hテキスト
     </h4>
     <!-- H2 ends here -->
 
@@ -534,7 +536,101 @@
       <li>Lorem, ipsum dolor.</li>
       <li>Lorem, ipsum dolor.</li>
     </ol>
+    <ul>
+      <li>詳細が入りますテキストテキストテキスト詳細が入キスト</li>
+      <li>
+        詳細が入りますテキストテキストテキスト詳細が入キスト
+        詳細が入りますテキストテキストテキスト詳細が入キスト
+        詳細が入りますテキストテキストテキスト詳細が入キスト v
+      </li>
+      <li>詳細が入りますテキストテキストテキスト詳細が入キスト</li>
+    </ul>
     <!-- ol and ul ends here -->
+
+    <!-- ======================================================== -->
+
+    <!-- Comment gray starts here -->
+    <div class="comment_gray">
+      <div class="comment_box">
+        <div class="avatar_side">
+          <img src="./assets/images/comment_avatar.svg" alt="" />
+          <p>人物名など</p>
+        </div>
+        <div class="comment_side">
+          <div class="triangle"></div>
+          <p>
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Comment gray ends here -->
+
+    <!-- ======================================================== -->
+
+    <!-- Comment white starts here -->
+    <div class="comment_white">
+      <div class="comment_box">
+        <div class="avatar_side">
+          <img src="./assets/images/comment_avatar.svg" alt="" />
+          <p>人物名など</p>
+        </div>
+        <div class="comment_side">
+          <img
+            src="./assets/icons/white_triangle.svg"
+            alt=""
+            class="triangle" />
+          <p>
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Comment white ends here -->
+
+    <!-- ======================================================== -->
+
+    <!-- Reference starts here -->
+    <div class="reference">
+      <div class="reference_card">
+        <div class="round">
+          <h5>“</h5>
+        </div>
+
+        <p>引用が入ります引用が入ります引用が入ります引用が入ります</p>
+      </div>
+    </div>
+    <!-- Reference ends here -->
+
+    <!-- ========================================================= -->
+
+    <!-- Big_image starts here -->
+    <div class="big_image">
+      <div class="image_container">
+        <img src="./assets/images/big_image.jpeg" alt="" />
+      </div>
+    </div>
+    <!-- Big image ends here -->
+
+    <!-- ========================================================= -->
+
+    <!-- small_image starts here -->
+    <div class="small_image">
+      <div class="container">
+        <div class="small_image_container">
+          <img src="./assets/images/big_image.jpeg" alt="" />
+        </div>
+        <div class="small_image_container">
+          <img src="./assets/images/big_image.jpeg" alt="" />
+        </div>
+        <div class="small_image_container">
+          <img src="./assets/images/big_image.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- small image ends here -->
 
     <!-- ======================================================== -->
 
@@ -605,6 +701,7 @@
     </div>
     <!-- Footer ends here -->
     <script src="./js/header.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/fv.js"></script>
     <!-- swiper js use in hubspot -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

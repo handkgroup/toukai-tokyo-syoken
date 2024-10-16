@@ -38,9 +38,11 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  overflow: hidden;
   color: var(--white, #fff);
   text-align: center;
-  font-size: 1.8rem;
+  text-overflow: ellipsis;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 .fv_section swiper-container swiper-slide p {

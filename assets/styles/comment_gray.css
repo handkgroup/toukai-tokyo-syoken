@@ -1,0 +1,56 @@
+.comment_gray {
+  width: 100%;
+}
+.comment_gray .comment_box {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.comment_gray .comment_box .avatar_side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.comment_gray .comment_box .avatar_side img {
+  width: 10.5rem;
+}
+.comment_gray .comment_box .avatar_side p {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.comment_gray .comment_box .comment_side {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 2rem;
+  background: #efefef;
+  position: relative;
+}
+.comment_gray .comment_box .comment_side p {
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.comment_gray .comment_box .comment_side .triangle {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 32px solid #efefef;
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=comment_gray.css.map */

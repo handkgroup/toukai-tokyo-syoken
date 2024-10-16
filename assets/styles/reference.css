@@ -1,0 +1,44 @@
+.reference {
+  width: 100%;
+}
+.reference .reference_card {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 1.6rem 2rem;
+  align-items: flex-start;
+  gap: 1.6rem;
+  border-radius: 1rem;
+  background: #fef1f1;
+}
+.reference .reference_card .round {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #f67a7a;
+}
+.reference .reference_card .round h5 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  transform: translateY(12.5%);
+  line-height: 4rem;
+}
+
+.reference .reference_card p {
+  flex: 1 0 0;
+  color: var(--text_main, #333);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* p */
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.56px;
+}

@@ -1,0 +1,27 @@
+.small_image {
+  width: 100%;
+}
+.small_image .container {
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.small_image .container .small_image_container {
+  width: 24rem;
+  height: 13.8rem;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.small_image .container .small_image_container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}

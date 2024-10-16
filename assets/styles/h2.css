@@ -1,4 +1,5 @@
-h2 {
+.h2_section {
+  position: relative; /* Ensure positioning context for the pseudo-element */
   display: flex;
   width: 100%;
   max-width: 144rem;
@@ -11,11 +12,14 @@ h2 {
   margin: 0 auto;
 }
 
-h2 span {
+.h2_section::before {
+  content: "";
   width: 0.4rem;
   height: 3.8rem;
   border-radius: 1rem;
-  background: var(--main, #dd5b5b);
+  background: var(--main, #dd5b5b); /* Red color */
+  display: inline-block;
+  margin-right: 0.8rem;
 }
 h3 {
   width: 100%;
@@ -32,7 +36,8 @@ h3 {
   font-size: 2.1rem;
   font-weight: 700;
 }
-h4 {
+.h4_section {
+  position: relative; /* Required for the pseudo-element positioning */
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -43,8 +48,11 @@ h4 {
   line-height: 160%;
 }
 
-h4 span {
+.h4_section::before {
+  content: "";
   width: 2.4rem;
   height: 0.4rem;
-  background: var(--main, #dd5b5b);
+  background: var(--main, #dd5b5b); /* Red color */
+  display: inline-block;
+  flex-shrink: 0; /* Prevents shrinking of the pseudo-element */
 }
