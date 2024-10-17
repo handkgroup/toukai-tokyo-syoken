@@ -1,0 +1,97 @@
+.recommended_article {
+  width: 100%;
+}
+.recommended_article .article_container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.recommended_article .article_container .top_header {
+  width: fit-content;
+  display: flex;
+  padding: 0.5rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  background: #50618a;
+}
+.recommended_article .article_container .top_header h5 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.recommended_article .article_container .bottom_box {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+  align-self: stretch;
+  border-radius: 0 1rem 1rem 1rem;
+  border: 0.1rem solid var(--accent, #50618a);
+  background: var(--white, #fff);
+}
+
+.recommended_article .article_container .bottom_box .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.recommended_article .article_container .bottom_box .card img {
+  width: 17.8rem;
+  border-radius: 2rem;
+}
+.recommended_article .article_container .bottom_box .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow: hidden;
+}
+
+.recommended_article .article_container .bottom_box .card .content .p_b {
+  align-self: stretch;
+  color: var(--text_main, #333);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.recommended_article .article_container .bottom_box .card .content .p_l {
+  /* overflow: hidden; */
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; */
+  color: var(--text_main, #333);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .recommended_article .article_container .top_header {
+    padding: 0.5rem 1.6rem;
+  }
+  .recommended_article .article_container .bottom_box {
+    padding: 16px 8px;
+    gap: 16px;
+  }
+  .recommended_article .article_container .bottom_box .card {
+    gap: 10px;
+  }
+  .recommended_article .article_container .bottom_box .card img {
+    width: 107px;
+    border-radius: 10px;
+  }
+  .recommended_article .article_container .bottom_box .card .p_b {
+    font-size: 12px;
+  }
+  .recommended_article .article_container .bottom_box .card .p_l {
+    font-size: 1.2rem;
+  }
+}
