@@ -1,0 +1,55 @@
+.bottom_sticky {
+  width: 100%;
+  padding: 1.6rem 0;
+  flex-shrink: 0;
+  background: var(--accent, #50618a);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+}
+.bottom_sticky .bottom_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+}
+.bottom_sticky .bottom_container .left_part {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+.bottom_sticky .bottom_container .left_part img {
+  width: 2rem;
+}
+.bottom_sticky .bottom_container .left_part p {
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.bottom_sticky .bottom_container .btn {
+  display: flex;
+  padding: 0.8rem 1.6rem;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 8.5rem;
+  background: var(--main, #dd5b5b);
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.bottom_sticky .bottom_container .btn img {
+  width: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .bottom_sticky .bottom_container {
+    flex-direction: column;
+  }
+}

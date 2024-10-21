@@ -1,0 +1,183 @@
+.pop_articles {
+  width: 100%;
+  .pop_article-box {
+    width: 100%;
+    max-width: 104rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+    .left_box {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      align-items: flex-start;
+      img {
+        width: 100%;
+        border-radius: 2rem;
+      }
+      .details {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        .btn_pop {
+          display: flex;
+          padding: 0.3rem 1rem;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          border-radius: 1.4rem;
+          border: 0.1rem solid var(--accent1, #50618a);
+          background: #fff;
+          color: var(--accent1, #50618a);
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+        .date_pop {
+          color: var(--gray, #9e9e9e);
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+      }
+      h2 {
+        align-self: stretch;
+        color: var(--text_main, #333);
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      .context {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        align-self: stretch;
+        overflow: hidden;
+        color: var(--text_main, #333);
+        text-overflow: ellipsis;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+    .right_box {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.6rem;
+      flex: 1 0 0;
+      .card {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        align-self: stretch;
+        img {
+          width: 17.8rem;
+          border-radius: 2rem;
+        }
+        .content_container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.6rem;
+          flex: 1 0 0;
+          .right_details {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            .right_btn_pop {
+              display: flex;
+              padding: 0.3rem 1rem;
+              justify-content: center;
+              align-items: center;
+              gap: 1rem;
+              border-radius: 1.4rem;
+              border: 0.1rem solid var(--accent1, #50618a);
+              background: #fff;
+              color: var(--accent1, #50618a);
+              font-size: 1.2rem;
+              font-weight: 700;
+            }
+            .right_date_pop {
+              color: var(--gray, #9e9e9e);
+              font-size: 1.2rem;
+              font-weight: 400;
+            }
+          }
+          h2 {
+            align-self: stretch;
+            color: var(--text_main, #333);
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+          .right_context {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            align-self: stretch;
+            overflow: hidden;
+            color: var(--text_main, #333);
+            text-overflow: ellipsis;
+            font-size: 1.4rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pop_articles {
+    .pop_article-box {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+      .left_box {
+        width: 70%;
+        .details {
+          gap: 1.4rem;
+          .btn_pop {
+            font-size: 1.2rem;
+          }
+          .date_pop {
+            font-size: 1.2rem;
+          }
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        .context {
+          font-size: 1.2rem;
+        }
+      }
+      .right_box {
+        width: 70%;
+        .card {
+          flex-direction: row-reverse;
+          img {
+            width: 10.4rem;
+          }
+          h2 {
+            font-size: 1.2rem;
+          }
+          .right_context {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .pop_articles {
+    .pop_article-box {
+      .left_box {
+        width: 100%;
+      }
+      .right_box {
+        width: 100%;
+      }
+    }
+  }
+}
